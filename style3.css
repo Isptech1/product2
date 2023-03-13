@@ -1,0 +1,257 @@
+<?php include 'validate.php'?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ <div class="container">
+  <div class="header"><h2><center>Product Purchase</center></h2></div>
+  <form action="" class="aa-login-form" method="POST" onsubmit="return myfun()" enctype='multipart/form-data'>
+    <div class="name">
+    <label for=""> Product Name<span span id="pro_name">*</span></label><br>
+    <input type="text"  name="product_name" id="pname"  required>  
+    <p>error</p>
+    </div>
+    <div class="id">
+      <label for="">Product Id<span id="pro_id">*</span></label><br>
+      <input type="text" name="product_id" id="pid" required>
+      <p>error</p>
+      <span></span>
+    </div>
+    <div class="hsn ">
+      <label for="">HSN code<span>*</span></label><br>
+      <input type="text" name="hsn" required>
+      <p>error</p>
+    </div>
+    <div class="cp">
+      <label for="">CP<span>*</span></label><br>
+      <input type="text" name="cp" required>
+      <p>error</p>
+      </div>
+      <div class="qty">
+      <label for="">QTY<span>*</span></label><br>
+      <input type="text" name="cp" required>
+      <p>error</p>
+      </div>
+      <div class="sp">
+      <label for="">SP<span>*</span></label><br>
+      <input type="text" name="cp" required>
+      <p>error</p>
+      </div>
+      <div class="date">
+      <label for="">Date<span>*</span></label><br>
+      <input type="date" id="datee" name="date" required>
+      </div>
+     <div class="category">
+    <label for="">Category <span>*</span>
+    <span id="p_desc" class="text-danger font-weight-bold"></span>
+    </label>
+</div>
+    <div class="control-group">
+       <div id = "address">
+          <?php include ("address.php")?>
+       </div>
+     </div>
+    <input type="submit" value="Submit" class="butt">
+                     <!--<label class="rememberme" for="rememberme">
+                      <input type="checkbox" id="rememberme"> Remember me </label>-->  
+  </form>
+  </div>
+ 
+</body>
+</html>body{
+    font-family:sans-serif;
+}
+
+
+    
+.container{
+    width: 70%;
+    margin: auto;
+    height: 70vh;  
+}
+
+
+.header{
+    text-align: left;
+    padding-top: 25px;
+    margin-left: 5px;
+    margin-bottom:70px;
+    border-bottom: 2px solid silver;
+    color: black;
+
+}
+
+
+
+.main input,button{
+    width: 480px;
+    height: 35px;
+    background-origin: none;
+    outline: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 30px;
+
+}
+
+
+.main label{
+    margin-left: 75px;
+}
+
+.main input{
+  
+    margin-left: 75px;
+}
+
+
+
+.main button{
+    height: 45px;
+    width: 75px;
+    font-size: 15px;
+    color: white;
+   margin-left: 75px;
+    padding-left:10px;
+    background-color: #D10024;
+    border: none;
+    margin-top: 5px;
+}
+
+.main button:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: black;
+}
+
+.show{
+    margin-right: -100px;
+}
+
+
+
+.lost{
+    margin-top: -20px;
+    margin-left: 75px;
+}
+
+
+.reg{
+    margin-left: 400px;
+    margin-bottom: 30px;
+}
+
+
+.eye{
+    position: absolute;
+    margin-left: 530px;
+    margin-top: -5px;
+    margin-bottom: 10;
+}
+
+#hide1{
+    display: none;
+}
+
+.name{
+   font-size: 20px;
+   margin-bottom: 150px;
+}
+
+.id{
+    margin-left: 500px;
+    margin-top: -200px;
+    font-size: 20px;
+    
+}
+
+.cp{
+    margin-left: 500px;
+    margin-top: -38px;
+    font-size: 20px;  
+}
+
+.cp input{
+    width: 285px;
+    height: 23px;
+}
+
+.category{
+    margin-left: 500px;
+    margin-top: -20px;
+    font-size: 20px;
+
+}
+
+.control-group{
+    margin-left: 410px;
+}
+
+.hsn{
+    font-size: 20px;
+}
+
+.hsn input{
+    width: 285px;
+    height: 23px;
+}
+
+.qty{
+    font-size: 20px;
+}
+
+.qty input{
+    width: 285px;
+    height: 23px;
+}
+
+.sp{
+    font-size: 20px;
+}
+
+.sp input{
+    width: 285px;
+    height: 23px;
+}
+
+.date{
+    font-size: 20px;
+}
+
+.date input{
+    width: 285px;
+    height: 23px;
+}
+
+.butt{
+    margin-left: 500px;
+    width: 300px;
+    height: 30px;
+    margin-top: 50px;
+    background-color: #D10024;
+    border: none;
+    color: wheat;
+}
+
+.butt:hover{
+    background-color: lightcoral;
+}
+
+.id input{
+    width: 285px;
+    height: 23px;
+}
+
+.name input{
+    width: 285px;
+    height: 23px;
+}
